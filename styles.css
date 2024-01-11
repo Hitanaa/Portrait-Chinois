@@ -1,0 +1,938 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+
+/* --- Bouton top / navbar scroll smooth --- */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+/* --- Fond du site --- */
+body {
+
+    /* L'image de fond */
+    background-image: url(img/fond_site.jpg);
+
+    /* Centrage de l'image de fond */
+    background-position: center;
+
+    /* Couleur du texte */
+    color: #fff;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 0;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+
+    /* Couleur du fond */
+    background-color: #ffffff;
+}
+
+
+
+/* --- Alligner les textes qui sont dans le "header" --- */
+header {
+
+    /* Allignement des textes */
+    text-align: center;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 20px;
+}
+
+
+
+/* --- Les polices d'écriture --- */
+@font-face {
+    font-family: 'japanese';
+    src: url(fonts/JAPANESE_2020.ttf) format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'edosz';
+    src: url(fonts/edosz.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'glacial-bold';
+    src: url(fonts/GlacialIndifference-Bold.otf) format('opentype');
+}
+
+@font-face {
+    font-family: 'glacial-regular';
+    src: url(fonts/GlacialIndifference-Regular.otf) format('opentype');
+}
+
+
+/* =========== PAGE D'ACCUEIL =========== */
+
+/* --- Titre "Portrait Chinois" --- */
+.title {
+
+    /* Centrer les élèments */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Taille du titre */
+    height: 100vh;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0px;
+
+    /* Cacher le débordement */
+    overflow: hidden;
+}
+
+
+/* --- Le titre "Portrait Chinois" en <h1> --- */
+.title h1 {
+
+    /* Centrer les élèments */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Couleur du texte */
+    color: white;
+
+    /* Ombre noire */
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    /* Police d'écriture */
+    font-family: 'japanese';
+
+    /* Taille de police d'écriture */
+    font-size: 7em;
+}
+
+
+
+/* --- Les phrases dans le header (bienvenue/page d'accueil et ma description) --- */
+p {
+
+    /* Taille de police d'écriture */
+    font-size: 1.4em;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 2px;
+
+    /* Marge en dessous de chaque phrase */
+    margin-bottom: 40px;
+
+    /* Police d'écriture */
+    font-family: 'glacial-regular';
+
+    /* Mettre le texte en gras */
+    font-weight: 400;
+}
+
+
+
+/* --- Marge en bas du texte pour faire une délimitation ---*/
+.margin_p {
+
+    /* Marge en dessous de chaque phrase */
+    margin-bottom: 200px;
+}
+
+
+
+/* --- Texte EVE GONCALVES --- */
+.about-eve {
+
+    /* Marge automatiquement au centre */
+    margin: auto;
+
+    /* Largeur du texte */
+    width: 800px;
+
+    /* Mettre le texte en gras */
+    font-weight: 700;
+
+}
+
+
+
+
+/* --- Les titres en <h1> --- */
+h1 {
+
+    /* Taille de police d'écriture */
+    font-size: 4em;
+
+    /* Couleur du texte */
+    color: rgb(255, 255, 255);
+
+    /* Police d'écriture */
+    font-family: 'edosz';
+}
+
+
+
+/* --- Les sous-titres en <h1> --- */
+h2 {
+
+    /* Taille de police d'écriture */
+    font-size: 1.8em;
+
+    /* Marge en dessous de chaque phrase */
+    margin-bottom: 40px;
+
+    /* Alignement du texte au centre */
+    text-align: center;
+
+    /* Police d'écriture */
+    font-family: 'edosz';
+
+    /* Couleur du texte */
+    color: #ffffffc4;
+}
+
+/* Styling for h1 and h2 on screens with a maximum width of 700px */
+@media screen and (max-width: 700px) {
+
+    .title-analogie,
+    section h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+
+    .about-eve {
+        width: 500px;
+    }
+}
+
+
+/* =========== CRÉATIONS DES SECTIONS =========== */
+
+/* --- Les sections (catégories) --- */
+section {
+
+    /* Permet d'augmenter la marge entre chaque catégorie */
+    margin-bottom: 50px;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 10px;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 20px;
+
+    /* Fond de la section en noir */
+    background-color: rgba(0, 0, 0, 0.567);
+}
+
+
+
+/* --- Les titres analogiques (Si j'étais...) --- */
+.title-analogie {
+
+    /* Alignement du texte au centre */
+    text-align: center;
+
+    /* Taille de police d'écriture */
+    font-size: 3.5em;
+
+    /* Couleur du texte */
+    color: rgb(255, 255, 255);
+}
+
+
+
+/* --- Le conteneur où il y a l'image --- */
+.image-container {
+
+    /* L'élément se place en fonction de sa place originale sur la page */
+    position: relative;
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+    /* Centrer les élèments */
+    justify-content: center;
+    align-items: center;
+
+    /* Empêche le débordement du texte */
+    overflow: hidden;
+
+    /* Largeur */
+    width: 100%;
+
+    /* Hauteur de l'image */
+    height: 650px;
+
+    /* Marge en dessous de l'image */
+    margin-bottom: 20px;
+}
+
+
+
+/* =========== BARRE DE DÉFILEMENT POUR CHROME, SAFARI ET OPERA =========== */
+
+/* --- Largeur de la barre de défilement --- */
+::-webkit-scrollbar {
+
+    /* Largeur */
+    width: 11px;
+}
+
+
+
+/* --- Couleur de fond de la barre de défilement --- */
+::-webkit-scrollbar-track {
+
+    /* Couleur de fond */
+    background-color: #000000;
+}
+
+
+
+/* --- Couleur de la poignée de la barre de défilement --- */
+::-webkit-scrollbar-thumb {
+
+    /* Couleur de fond */
+    background-color: rgb(255, 255, 255);
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 6px;
+}
+
+
+
+/* =========== FONDU DU TEXTE DESCRIPTIF AU SURVOL DE L'IMAGE =========== */
+
+/* --- Texte descriptif --- */
+.htxt1 {
+
+    /* Largeur */
+    width: 40%;
+
+    /* Efface l'élément ciblé sans laisser de trace */
+    display: none;
+
+    /* Couleur de fond */
+    background-color: #ffffff69;
+
+    /* Couleur du texte */
+    color: #000000bd;
+
+    /* Hauteur de l'image */
+    height: 250px;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 20px;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 10px;
+
+    /* Mettre le texte en gras*/
+    font-weight: 600;
+
+    /* Animation */
+    animation: tail 1s ease-in-out;
+}
+
+
+
+/* --- FONDU DU TEXTE DESCRIPTIF AU MOMENT OU L'UTILISATEUR LE SURVOLE AVEC LE CURSEUR --- */
+.hp:hover .htxt1 {
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+    /* Le contenu s'exécute de haut en bas */
+    flex-direction: column;
+
+    /* Centrer les élèments */
+    justify-content: center;
+    align-items: center;
+
+    /* Centrer les textes */
+    text-align: center;
+
+    /* Définition des espaces entre les lignes */
+    gap: 1rem;
+
+    /* Animation */
+    animation: identifier 1s ease-in-out;
+}
+
+
+
+/* --- Les étapes qui composent une séquence d'animation --- */
+@keyframes identifier {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/*  */
+.hp {
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+    /* Définition des espaces entre les lignes */
+    gap: 2rem;
+}
+
+
+
+/* =========== CRÉATION DU BOUTON POUR LE TOP =========== */
+
+/* --- bouton pour le top --- */
+.btn-top {
+
+    /* Position toujours fixé au même endroit lorsque la page défile */
+    position: fixed;
+
+    /* A droite */
+    right: 0;
+
+    /* En bas */
+    bottom: 0;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 15px;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 20px;
+
+    /* Définition du pointeur lorsque la sourie est sur l'élèment */
+    cursor: pointer;
+
+    /* Attribut de présentation qui définit la couleur de remplissage du cercle */
+    fill: #ffffff;
+
+    /* Détermine l'ordre des différentes couches que formeront les éléments */
+    z-index: 1;
+}
+
+
+/* =========== CRÉATION DE LA NAVBAR =========== */
+
+
+/* --- Masque la navbar par defaut --- */
+
+.hidden-on-eve-goncalves {
+    display: none;
+}
+
+.sidebar {
+
+    /* Rendre la navbar fixe */
+    position: fixed;
+
+    /* Decale la navbar de la gauche de 80px */
+    left: 80px;
+    top: 0;
+
+    /* Decale la navbar du haut de 280px */
+    padding-top: 280px;
+
+    /* Faire en sorte que la navbar traverse tout */
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.sidebar a {
+
+    /* Enlève la ligne dessous le lien */
+    text-decoration: none;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 10px;
+
+    /* Utilisation de flexbox pour aligner le rond */
+    display: flex;
+
+    color: rgba(255, 255, 255, 0);
+
+    /* Centrage vertical */
+    align-items: center;
+
+    /* Positionnement relatif pour les pseudos-éléments */
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+/* --- Ajout d'une classe pour les ronds --- */
+.sidebar a .circle {
+
+    /* Taille du rond */
+    width: 20px;
+
+    /* Hauteur du rond */
+    height: 20px;
+
+    /* Couleur du rond */
+    background-color: #fff;
+
+    /* Pour faire la forme du rond */
+    border-radius: 50%;
+}
+
+/* --- Changement de couleur du texte au survol du lien --- */
+.sidebar a:hover span {
+
+    /* Texte complètement opaque au survol */
+    color: rgba(255, 255, 255, 1);
+}
+
+/* --- Ajout d'une classe active pour mettre en surbrillance l'élément actuellement sélectionné --- */
+.sidebar a.active span {
+
+    /* Texte complètement opaque pour l'élément actif */
+    color: rgba(255, 255, 255, 1);
+}
+
+/* --- Ajustement de la position des liens pour une meilleure disposition --- */
+.sidebar a {
+
+    margin-bottom: 2px;
+}
+
+/* --- Ajout d'une classe active pour mettre en surbrillance l'élément actuellement sélectionné --- */
+.sidebar a.active .circle {
+
+    /* Maintenir le rond visible pour l'élément actif */
+    opacity: 1;
+}
+
+.blur {
+
+    /* Largeur */
+    width: 500px;
+}
+
+@media screen and (max-width: 1200px) {
+    .blur {
+
+        /* Largeur */
+        width: 400px;
+    }
+
+    .htxt1 {
+
+        /* Taille de police d'écriture */
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .blur {
+
+        /* Largeur */
+        width: 250px;
+    }
+
+    .htxt1 {
+
+        /* Taille de police d'écriture */
+        font-size: 0.8em;
+    }
+}
+
+/* =========== FORMULAIRE =========== */
+
+/* --- Le footer --- */
+footer {
+
+    /* Alignement du texte au centre */
+    text-align: center;
+}
+
+
+form {
+
+    /* Alignement du texte au centre */
+    text-align: center;
+
+    /* Alignement des objets au centre */
+    align-items: center;
+
+
+    justify-content: center;
+}
+
+.formu {
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0 auto;
+
+    /* Hauteur */
+    height: 80vh;
+}
+
+/* --- Style du formulaire--- */
+.styleform {
+
+    /* Alignement des objets au centre */
+    align-items: center;
+
+
+    justify-content: center;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0 auto;
+
+    /* Largeur */
+    width: 400px;
+
+    /* Couleur du fond */
+    background-color: #4f4f4f;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 20px;
+
+
+    border: solid #fff 2px;
+}
+
+input[type="submit"] {
+
+
+    cursor: pointer;
+}
+
+.styleform input {
+
+    /* Largeur */
+    width: 300px;
+
+    /* Hauteur */
+    height: 35px;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0 auto;
+
+
+    margin-bottom: 20px;
+
+    /* Couleur du fond */
+    background-color: #ffffff69;
+
+    /* Couleur du texte */
+    color: #fff;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 10px;
+
+
+    border: 0;
+}
+
+.styleform textarea {
+
+    /* Couleur du fond */
+    background-color: #ffffff69;
+
+    /* Couleur du texte */
+    color: #fff;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 10px;
+
+
+    border: 0;
+}
+
+.styleform input[type=text],
+input[type=email],
+input[type=url] {
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 20px;
+}
+
+.styleform textarea {
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .styleform {
+
+        /* Largeur */
+        width: 300px;
+    }
+
+    .styleform input {
+
+        /* Largeur */
+        width: 200px;
+    }
+
+    .styleform textarea {
+
+        /* Largeur */
+        width: 200px;
+    }
+}
+
+/* --- Arguments --- */
+.arg {
+
+    /* Hauteur */
+    height: 100px;
+
+
+    overflow-wrap: break-word;
+}
+
+/* --- Bouton --- */
+.formbtn {
+
+    /* Créer un espace supplémentaire en haut d'un élément */
+    padding-top: 20px;
+}
+
+textarea {
+
+
+    resize: none;
+}
+
+
+/* =========== MODAL (MENTIONS LEGALES) =========== */
+
+
+/* Style modal  */
+.modal {
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    justify-content: center;
+
+    /* Alignement des objets au centre */
+    align-items: center;
+
+    /* Définition des espaces entre les lignes */
+    gap: 0.4rem;
+
+    /* Largeur */
+    width: 70%;
+
+    /* Largeur max */
+    max-width: 1200px;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 2rem;
+
+
+    min-height: 250px;
+
+    /* Position toujours fixé au même endroit lorsque la page défile */
+    position: fixed;
+
+
+    z-index: 2;
+
+    /* Changer le haut à 50% pour centrer verticalement */
+    top: 50%;
+
+    /* Changer la gauche à 50% pour centrer horizontalement */
+    left: 50%;
+
+    /* Utiliser la transformation pour centrer horizontalement et verticalement */
+    transform: translate(-50%, -50%);
+
+    /* Couleur du fond */
+    background-color: white;
+
+
+    border: 1px solid #ddd;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 15px;
+}
+
+/* Fixer le modal quand on scroll */
+.modal .flex {
+
+    /* Créer des éléments flexibles  */
+    display: flex;
+
+    /* Alignement des objets au centre */
+    align-items: center;
+
+
+    justify-content: space-between;
+}
+
+.modal input {
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 0.7rem 1rem;
+
+
+    border: 1px solid #ddd;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 5px;
+
+    /* Taille de police d'écriture */
+    font-size: 0.9em;
+}
+
+.modal p {
+
+    /* Taille de police d'écriture */
+    font-size: 0.9rem;
+
+    /* Couleur du texte */
+    color: #777;
+
+    /* Marge sur chaque côté de l'élèment */
+    margin: 0.4rem 0 0.2rem;
+}
+
+.modal h2,
+.modal h3 {
+
+    /* Couleur du texte */
+    color: #000;
+
+    /* Police d'écriture */
+    font-family: 'edosz';
+}
+
+@media screen and (max-width: px) {
+    .modal {
+        left: 20%;
+    }
+}
+
+
+button {
+
+
+    cursor: pointer;
+
+
+    border: none;
+
+    /* Mettre le texte en gras */
+    font-weight: 600;
+}
+
+.btn {
+
+
+    display: inline-block;
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 0.8rem 1.4rem;
+
+    /* Mettre le texte en gras */
+    font-weight: 700;
+
+    /* Couleur du texte */
+    color: white;
+
+    /* Alignement du texte au centre */
+    text-align: center;
+
+    /* Taille de police d'écriture */
+    font-size: 1em;
+}
+
+.btn-open {
+
+
+    position: relative;
+}
+
+.btn-close {
+
+
+    transform: translate(10px, -20px);
+
+    /* Créer un espace supplémentaire à l'intérieur d'un élément */
+    padding: 0.5rem 0.7rem;
+
+    /* Couleur du fond */
+    background: #eee;
+
+    /* Permet de définir des coins arrondis pour la bordure de l'élèment */
+    border-radius: 50%;
+}
+
+.overlay {
+
+    /* Position toujours fixé au même endroit lorsque la page défile */
+    position: fixed;
+
+
+    top: 0;
+
+
+    bottom: 0;
+
+
+    left: 0;
+
+
+    right: 0;
+
+    /* Largeur */
+    width: 100%;
+
+    /* Hauteur */
+    height: 100%;
+
+    /* Couleur du fond */
+    background: rgba(0, 0, 0, 0.5);
+
+
+    backdrop-filter: blur(3px);
+
+
+    z-index: 1;
+}
+
+.hidden {
+
+
+    display: none;
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "analogie": "un Animal",
+        "Valeuranalogie": " un TIGRE",
+        "justify": "Le tigre incarne des qualités qui m'inspirent comme la force, la détermination et l'indépendance. Dans la culture chinoise, le tigre occupe une place importante en tant que symbole de courage, de protection, de passion et de puissance. Il est considéré comme un gardien, représentant la bravoure et la résistance contre les forces négatives. ",
+        "img": "img/tigre.png",
+        "id": "tigre"
+    },
+    {
+        "analogie": "un Pays",
+        "Valeuranalogie": " la GRÈCE",
+        "justify": "La Grèce m'attire profondément pour sa culture, ses histoires fascinantes sur les dieux et ses temples antiques. La beauté du pays, ses paysages, l'architecture des maisons et des temples, c'est tout simplement magnifique. Depuis un bon moment, je suis captivée par la mythologie grecque, ce qui me pousse à rêver de visiter ce pays.",
+        "img": "img/grece.jpg",
+        "id": "grece"
+    },
+    {
+        "analogie": "un Plat",
+        "Valeuranalogie": " des SUSHIS",
+        "justify": "J'ai toujours été rebuté par ce plat à cause du poisson cru, des algues et même du riz gluant. Je voulais comprendre pourquoi ce plat était tant apprécié en Asie et pourquoi sa préparation était si complexe. En grandissant ma perception a changé et m'a fait aimer quelque chose que je n'aurais jamais cru possible auparavant.",
+        "img": "img/sushi.png",
+        "id": "plat"
+    }, 
+    {
+        "analogie": "une fleur",
+        "Valeuranalogie": " une LYCORIS RADIATA",
+        "justify": "Le Lycoris radiata, ou Lys de résurrection, est souvent considéré comme un symbole de renaissance. Cette fleur a la particularité de produire des fleurs éclatantes sans feuillage. Elle représente la force et la capacité de se régénérer après des périodes difficiles. Personnellement, je trouve cette fleur à la fois magnifique et fascinante lorsqu'on l'observe.",
+        "img": "img/fleur.png",
+        "id": "fleur"
+    },
+    {
+        "analogie": "une Pierre Precieuse",
+        "Valeuranalogie": " le QUARTZ",
+        "justify": "Le quartz est considéré comme une pierre protectrice et purifiante, apportant harmonie et équilibre. De plus, on dit que le quartz favorise la guérison et l'équilibre, éliminant les énergies négatives. Cette pierre me ressemble au niveau de la bienveillance et de la positivité.",
+        "img": "img/pierre.png",
+        "id": "quartz"
+    },
+    {
+        "analogie": "une Créature",
+        "Valeuranalogie": "un DRAGON",
+        "justify": " Le dragon chinois, symbole de puissance et de chance, trouve écho en moi. Comme lui, je possède une force intérieure face aux défis, je protège ce qui m'est cher et je sais me réinventer après les épreuves. Cette symbolique du dragon résonne dans ma vie quotidienne, où force, protection et renaissance se mêlent à mes actions et mes choix.",
+        "img": "img/dragon.png",
+        "id": "dragon"
+    },
+    {
+        "analogie": "une Planète",
+        "Valeuranalogie": " MARS",
+        "justify": "Mars, avec son allure mystérieuse et sa teinte rouge saisissante, est une planète fascinante. Bien que l'espace ne soit pas mon premier centre d'intérêt, la beauté de Mars et sa couleur captivante m'attirent irrésistiblement. Ça doit être une expérience incroyable que de découvrir cette planète de si près. Imaginer cette aventure, ressentir sa gravité, observer ses paysages...",
+        "img": "img/mars.png",
+        "id": "planete"
+    }
+]

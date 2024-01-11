@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Portrait Chinois</title>
+
+    <!-- Relier le CSS avec le HTML -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon/poisson-koi.png">
+
+    <!-- Aos library  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+    <!-- --- Bouton pour revenir à la page d'accueil du site --- -->
+    <a class="btn-top" href="#top">
+        <svg src="img/direction.svg" width="24" height="20">
+            <path d="M0 16.67l2.829 2.83 9.175-9.339 9.167 9.339 2.829-2.83-11.996-12.17z"></path>
+        </svg>
+    </a>
+
+    <header>
+
+
+        <!-- --- Navbar à gauche avec redirection vers les categories (à l'aide des ids) --- -->
+        <div class="sidebar">
+            <a href="#tigre"><span class="circle"></span></a>
+            <a href="#grece"><span class="circle"></span></a>
+            <a href="#plat"><span class="circle"></span></a>
+            <a href="#fleur"><span class="circle"></span></a>
+            <a href="#quartz"><span class="circle"></span></a>
+            <a href="#dragon"><span class="circle"></span></a>
+            <a href="#planete"><span class="circle"></span></a>
+        </div>
+
+
+
+        <div class="text">
+            <div id="title" class="title">
+                <!-- --- Animation pour le titre --- -->
+                <h1 data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" data-aos-once="true">Portrait
+                    Chinois</h1>
+            </div>
+        </div>
+
+        <!-- --- Animations pour les phrases de bienvenue/page d'accueil --- -->
+        <p data-aos="fade-down" data-aos-duration="700" data-aos-delay="400" data-aos-once="true">Bienvenue dans mon
+            monde, où chaque choix reflète une part de qui je suis. </p>
+        <p data-aos="fade-down" data-aos-duration="800" data-aos-delay="500" data-aos-once="true"> Découvrez-moi à
+            travers de ce Portrait Chinois. </p>
+
+        <!-- --- "Class" pour mettre une marge en bas du texte pour faire une délimitation --- -->
+
+        <div class="margin_p">
+            <!-- --- Animation pour la phrase de bienvenue/page d'accueil --- -->
+            <p data-aos="fade-down" data-aos-duration="900" data-aos-delay="600" data-aos-once="true">Explorez ces
+                facettes pour mieux me connaître. </p>
+        </div>
+
+        <div id="eve-goncalves" class="scrollable-section">
+            <!-- --- Animations pour les phrases --- -->
+            <h1 data-aos="fade-down" data-aos-duration="900" data-aos-delay="600" data-aos-once="true">EVE GONCALVES
+            </h1>
+            <div class="about-eve about-me-text">
+                <p data-aos="fade-down" data-aos-duration="900" data-aos-delay="600" data-aos-once="true">
+                    Actuellement en BUT <b>Métiers du Multimédia et de l'Internet</b> à Champs-sur-Marne, mon programme
+                    d'études comprend l'apprentissage de divers langages de programmation pour la création de sites web,
+                    ainsi que la conception des éléments visuels.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- --- Relier la liste (date.json) avec l'HTML et également le JS --- -->
+    <div id="list-analogies"></div>
+    
+    <section id="Formulaire" data-aos="fade-down" data-aos-duration="900" data-aos-delay="600" data-aos-once="true">
+      <h1 class="title-analogie aos-init aos-animate">À ton tour maintenant</h1>
+        <div class="styleform">
+            
+            <form method="get">
+
+                <h3>Mail</h3>
+                <input type="email" placeholder="Ton mail" id="mail" required="required">
+
+                <h3>Si j'étais ...</h3>
+                <input type="text" placeholder="Une boisson" id="analogie" required>
+
+                <h3>Je serais ...</h3>
+                <input type="text" placeholder="Un café" id="valeurAnalogie" required>
+
+                <h3>Images</h3>
+                <input type="url" id="imganalogie" name="imganalogie" placeholder="L'url d'une image" required>
+
+                <h3>Arguments</h3>
+                <textarea class="arg" type="text" placeholder="blabla" id="arganalogie" cols="40" rows="5"
+                    spellcheck="true" maxlength="400"></textarea>
+
+                <p class="formbtn">
+                    <input type="submit" value="Créer" id="sub" name="sub">
+                </p>
+                <div id="message"></div>
+            </form>
+        </main>
+    </section>
+    <!--Les si j'étais je serais des utilisateurs -->
+    <div id="you"></div>
+
+    <!-- --- Mentions légales --- -->
+    <footer>
+        <section class="modal hidden">
+            <div class="flex">
+              <button class="btn-close">⨉</button>
+            </div>
+            <div>
+            <h2>Mentions légales</h2>
+            <p>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l'économie numérique, il est précisé aux utilisateurs du site Portrait Chinois l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
+            <p>De plus, toutes les photos et police d'écriture utilisés sont libres de droit : <strong>Unsplash, Pinterest, Flaticon & Dafont</strong></p>
+            <h3>Edition du site</h3>
+              
+            <p>Eve Gonçalves, de nationalité Française (France), née le 23/10/2004.</p>
+              
+            <h3>Hébergement</h3>
+              
+            <p>Le Site est hébergé par la société IUT Gustave Eiffel, situé 2 Rue Albert Einstein, 77420 Champs-sur-Marne, (contact téléphonique ou email : +33 1 60 95 85 85).</p>
+            <h3>Nous contacter</h3> 
+            <p>Par téléphone : +33 6 64 77 90 64</p>
+            <p>Par email : evegoncalves.pro@gmail.com</p> 
+            <p>Par courrier : 12 avenue de la pépinière 93220 GAGNY</p> 
+              
+            <h3>Données personnelles</h3> 
+              
+            <p>Vos données ne seront jamais transmises à des tiers et ne feront jamais l'objet d'une commercialisation. Elles seront envoyées à une base de données ; pour toute demande de suppression ou toute question relative à la collecte ou au traitement de vos données personnelles par le site web, vous pouvez contacter le responsable de la protection des données du projet : philippe.gambette@univ-eiffel.fr. </p>
+            </div>
+
+          </section>
+          
+          <div class="overlay hidden"></div>
+            <h1 class="btn btn-open">Mentions légales</h1>
+    </footer>
+
+<!-- --- Relier le JS avec l'HTML --- -->
+   <script src="script.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</script>
+
+</body>
+
+</html>
